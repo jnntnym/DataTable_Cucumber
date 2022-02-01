@@ -3,118 +3,110 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-01-27T06:35:27.594Z",
-        "before": [
-          {
-            "result": {
-              "duration": 4623000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDef.Hook.startTest()"
-            }
-          }
-        ],
+        "start_timestamp": "2022-02-01T04:05:49.804Z",
         "line": 3,
-        "name": "Login with valid email and password",
+        "name": "Login with multiple users data",
         "description": "",
-        "id": "login-feature-test;login-with-valid-email-and-password",
-        "after": [
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDef.Hook.endTest(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
+        "id": "login-with-multiple-user-data-with-valid-credentials;login-with-multiple-users-data",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 38000000,
+              "duration": 4000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "I am at TalentTek Sign in page",
+            "name": "The user is in signin page",
             "match": {
-              "location": "stepDef.LoginStep.iAmAtTalentTekSignInPage()"
+              "location": "stepDef.DataTableSteps.theUserIsInSigninPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 195000000,
+              "duration": 6000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "I enter valid email address",
+            "name": "we enters multiple user data as below",
             "match": {
-              "location": "stepDef.LoginStep.iEnterValidEmailAddress()"
+              "location": "stepDef.DataTableSteps.weEntersMultipleUserDataAsBelow(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Email",
+                  "Password"
+                ]
+              },
+              {
+                "cells": [
+                  "abc@123",
+                  "a123"
+                ]
+              },
+              {
+                "cells": [
+                  "def@123",
+                  "b456"
+                ]
+              },
+              {
+                "cells": [
+                  "xyz@123",
+                  "c789"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enters the above data",
+            "match": {
+              "location": "stepDef.DataTableSteps.entersTheAboveData()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 113000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I enter valid password",
+            "line": 11,
+            "name": "user hit the login button",
             "match": {
-              "location": "stepDef.LoginStep.iEnterValidPassword()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 77000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I click on login button",
-            "match": {
-              "location": "stepDef.LoginStep.iClickOnLoginButton()"
+              "location": "stepDef.DataTableSteps.userHitTheLoginButton()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 290000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I should be able to successfully login",
+            "line": 12,
+            "name": "users should be logged in successfully",
             "match": {
-              "location": "stepDef.LoginStep.iShouldBeAbleToSuccessfullyLogin()"
+              "location": "stepDef.DataTableSteps.usersShouldBeLoggedInSuccessfully()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@login"
-          },
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@prePost"
+            "name": "@loginTable"
           }
         ]
       }
     ],
-    "name": "Login Feature Test",
+    "name": "Login with multiple user data with valid credentials",
     "description": "",
-    "id": "login-feature-test",
+    "id": "login-with-multiple-user-data-with-valid-credentials",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/login.feature",
+    "uri": "file:src/test/java/features/loginusers.feature",
     "tags": []
   }
 ]
